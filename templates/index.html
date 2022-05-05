@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    h1 {
+    color: black;
+    }
+
+    h1#titmenu {
+    color: #DAA520;
+    }
+
+    nav#menu {
+     background-color: #333;
+    overflow: hidden;
+    }
+
+/* Style the links inside the navigation bar */
+nav#menu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+nav#menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav#menu a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+    </style>
+    <title>Extratos Op-Fin</title>
+</head>
+<body background='https://as1.ftcdn.net/v2/jpg/03/30/83/26/1000_F_330832685_qWXIqMY5DU07AgZg74GrWo3Y32mCuJub.jpg'>
+<nav id="menu">
+<h1 id="titmenu">Menu Principal</h1>
+<ul>
+<a href="/arquivos">Arquivos</a>
+<a href="/download">Downloads</a>
+<a href="/cambios">Câmbios do Dia</a>
+</ul>
+</nav>
+<h1>Processe seu Extrato:</h1>
+    <form action = "/display" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file"/>
+         <br><br>
+         <input type = "submit"/>
+         <input type = "reset"/>
+      </form>
+</body>
+</html>
