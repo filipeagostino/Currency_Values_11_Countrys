@@ -1,0 +1,1 @@
+web: python __init__.py --host 0.0.0.0 --port=${PORT:-5000}
